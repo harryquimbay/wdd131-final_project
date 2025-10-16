@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Umi Shima - Discover the beauty of ocean-inspired collections and handcrafted designs." />
+    <title>Umi Shima | Contact</title>
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Playfair+Display&family=Roboto&display=swap" rel="stylesheet">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/contact.css">
+    
+    <!-- JS File -->
+    <script defer src="scripts/main.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo-section">
+            <img src="images/logo1.png" alt="Umi Shima Logo" class="logo" loading="lazy">
+            <h1>Umi Shima</h1>
+        </div>
+
+        <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">☰</button>
+
+        <nav id="nav-menu" class="nav-menu">
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="form.html">Join Us</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="contact.html" class="active">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contact-container">
+        <section class="contact-info">
+            <h2>Contact Us</h2>
+            <p>We’d love to hear from you! Reach out to us or visit our office.</p>
+
+            <div class="info-grid">
+                <div class="info-box">
+                    <h3>📍 Location</h3>
+                    <p>Calle 10 #5-23, San Andrés Islas, Colombia</p>
+                </div>
+                <div class="info-box">
+                    <h3>⏰ Hours</h3>
+                    <p>
+                        Monday – Friday: 9:00 AM – 6:00 PM<br>
+                        Saturday: 10:00 AM – 4:00 PM<br>
+                        Sunday: Closed
+                    </p>
+                </div>
+                <div class="info-box">
+                    <h3>💬 Support</h3>
+                    <p>
+                        Email: <a href="mailto:support@umishima.com">support@umishima.com</a><br>
+                        Phone: +57 (601) 555-7890
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="map-section">
+            <h2>Find Us</h2>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3949.198657679786!2d-81.700145!3d12.583403!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4b7a2b8df7d3fb%3A0x70c4d8a7a5b60a0f!2sSan%20Andr%C3%A9s%2C%20Colombia!5e0!3m2!1sen!2sco!4v1698800000000!5m2!1sen!2sco"
+                width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy">
+            </iframe>
+        </section>
+
+        <section class="contact-form">
+            <h2>Send Us a Message</h2>
+            <form id="contactForm">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Umi Shima | Inspired by the Sea | 
+        <a href="references.html">References</a>
+        </p>
+    </footer>
+</body>
+</html>
+
+

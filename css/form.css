@@ -1,0 +1,90 @@
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+    background-color: var(--background-color, #f6f3e9);
+    padding: 2rem 1rem;
+}
+
+/* Form container */
+main form {
+    background: #fff;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    max-width: 420px;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Form heading */
+main form h2 {
+    text-align: left;
+    color: #333;
+    font-size: 1.4rem;
+    margin-bottom: 1.5rem;
+    font-family: 'Playfair Display', serif;
+}
+
+/* Labels */
+main form label {
+    display: block;
+    font-weight: bold;
+    color: #444;
+    margin-top: 1rem;
+}
+
+/* Inputs and selects */
+main form input,
+main form select,
+main form textarea {
+    width: 100%;
+    padding: 0.6rem;
+    margin-top: 0.4rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: inherit;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Focus states */
+main form input:focus,
+main form select:focus,
+main form textarea:focus {
+    outline: none;
+    border-color: var(--accent-color, #ff865b);
+    box-shadow: 0 0 5px rgba(255,134,91,0.4);
+}
+
+/* Button */
+main form button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: var(--accent-color, #ff865b);
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    margin-top: 1.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+main form button:hover {
+    background-color: #ff6a32;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    main form {
+        padding: 1.5rem;
+    }
+
+    main form h2 {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+}

@@ -1,0 +1,118 @@
+/* ===CONTACT PAGE STYLES==== */
+
+/* --- MAIN CONTAINER --- */
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    padding: 2rem 4%;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+/* --- CONTACT INFO SECTION --- */
+.contact-info {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.contact-info h2 {
+    font-family: var(--font-heading);
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.contact-info p {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.info-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.info-box h3 {
+    font-size: 1.1rem;
+    color: var(--accent-color);
+    margin-bottom: 0.3rem;
+}
+
+.info-box p, 
+.info-box a {
+    font-size: 0.95rem;
+    color: var(--text-color);
+}
+
+.info-box a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.info-box a:hover {
+    text-decoration: underline;
+}
+
+/* --- MAP SECTION --- */
+.map-section {
+    grid-column: span 2;
+    margin-top: 2rem;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+.map-section h2 {
+    font-family: var(--font-heading);
+    color: var(--primary-color);
+    padding: 1rem 2rem;
+}
+
+.map-section iframe {
+    width: 100%;
+    height: 350px;
+    border: 0;
+}
+
+/* --- CONTACT FORM --- */
+.contact-form {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.contact-form h2 {
+    font-family: var(--font-heading);
+    color: var(--primary-color);
+    margin-bottom: 1.2rem;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contact-form label {
+    font-weight: bold;
+    font-size: 0.95rem;
+    color: var(--text-color);
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px so
+}
+
+
+
+
+

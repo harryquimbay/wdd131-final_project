@@ -1,0 +1,182 @@
+
+:root {
+    --primary-color: #005B73;
+    --accent-color: #FF7F50;
+    --secondary-color: #CBB29A;
+    --background-color: #F3F0E1;
+    --text-color: #333;
+    --font-primary: 'Roboto', sans-serif;
+    --font-heading: 'Playfair Display', serif;
+    --font-alt: 'Merriweather', serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-primary);
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* == HEADER & FOOTER== */
+header,
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    z-index: 10;
+}
+
+header img {
+    width: 150px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+header h1 {
+    font-family: var(--font-heading);
+    font-size: 1.8rem;
+    margin-top: 0.5rem;
+}
+
+footer {
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    padding: 1rem 0;
+}
+
+footer .social-icons {
+    margin-top: 0.5rem;
+}
+
+footer .social-icons img {
+    width: 24px;
+    margin: 0 0.5rem;
+    filter: brightness(0) invert(1);
+    transition: transform 0.3s;
+}
+
+footer .social-icons img:hover {
+    transform: scale(1.2);
+}
+
+/* ===LOGO SECTION=== */
+.logo-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    width: 90px;
+    height: auto;
+    margin-bottom: 0.5rem;
+}
+
+/* ===NAVIGATION (DESKTOP)=== */
+.nav-menu {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #F3F0E1;
+    font-family: var(--font-primary);
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: var(--accent-color);
+}
+
+/* ===HAMBURGER MENU BUTTON==== */
+.menu-toggle {
+    display: none;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: #F3F0E1;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+/* ====RESPONSIVE NAVIGATION=== */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+}
+
+  /* Hide nav by default */
+.nav-menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--primary-color);
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 999;
+    padding: 1rem 0;
+}
+
+  /* Show when toggled */
+.nav-menu.active {
+    display: flex;
+    max-height: 400px;
+    opacity: 1;
+    animation: slideDown 0.4s ease forwards;
+}
+
+.nav-menu.show {
+    display: flex;
+    animation: slideDown 0.3s ease forwards;
+}
+
+.nav-links {
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.nav-links a {
+    color: #F3F0E1;
+    font-size: 1.1rem;
+    }
+}
+
+
+/* ===ANIMATIONS=== */
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
